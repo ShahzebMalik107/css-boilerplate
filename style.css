@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap");
+:root {
+  --primary-color: #080f5b;
+  --secondary-color: #0d19a3;
+  --link-color: #15db95;
+  --text-color-dark: #000;
+  --text-color-light: #fff;
+  --button-text-color: #f4e4c1;
+  --transparent: rgba(255, 255, 255, 0);
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+  --container: 80%;
+}
+
+* {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--secondary-font);
+}
+
+p,
+a {
+  font-family: var(--secondary-font);
+}
+
+button {
+  font-family: var(--primary-font);
+  background: var(--primary-color);
+  color: var(--button-text-color);
+  border: 1px solid var(--primary-color);
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: var(--secondary-color);
+  color: var(--text-color-light);
+  border-color: var(--secondary-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--button-text-color);
+}
+
+.container {
+  max-width: var(--container);
+  margin: auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.col-2 {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+}
+
+.col-3 {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.col-4 {
+  -ms-flex-preferred-size: 24%;
+      flex-basis: 24%;
+}
+
+.border {
+  border: 1px solid var(--link-color);
+}
+/*# sourceMappingURL=style.css.map */
